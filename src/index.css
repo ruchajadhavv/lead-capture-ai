@@ -1,0 +1,110 @@
+:root {
+  --primary-color: #1c2833;
+  --secondary-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+/* Card container styles used by the JSX */
+form .container {
+  width: 100%;
+  max-width: 600px;
+  padding: 1.25rem;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+form h1 {
+  font-size: 2.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+form p {
+  margin: 0.5rem 0 1.2rem;
+  color: var(--primary-color);
+  opacity: 0.85;
+}
+
+form label {
+  display: block;
+  margin: 0.9rem 0 0.35rem;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+form input {
+  padding: 0.75rem 0.9rem;
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  border: 1px solid #e7eaee;
+  outline: none;
+  border-radius: 12px;
+  width: 100%;
+  background-color: #f2f3f4;
+  color: var(--primary-color);
+  transition: background-color 200ms ease-in-out, border-color 200ms ease-in-out;
+}
+
+form input:hover {
+  cursor: text;
+  border-color: #bfc7cf;
+}
+
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+form button {
+  padding: 10.8px 18px;
+  font-size: 1.05rem;
+  border-radius: 12px;
+  border: none;
+  background-color: #5dade2;
+  color: var(--secondary-color);
+  font-weight: 700;
+  transition: background-color 200ms ease-in-out, transform 100ms ease-in-out;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: #f1c40f;
+}
+
+form button:active {
+  transform: translateY(1px);
+}
+
+.clearfix {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.summary {
+  color: var(--primary-color);
+  opacity: 0.9;
+}
+
+.summary p {
+  margin: 0;
+}
+
+/* Keep only minimal global styling; other class selectors removed because they were for a different UI */
+
+
+
